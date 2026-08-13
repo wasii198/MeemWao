@@ -1,0 +1,110 @@
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.payment-logo {
+    width: 35px;
+    height: 23px;
+    object-fit: contain;
+    display: block;
+}
+
+.payment-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+    background: #fff;
+}
+
+.payment-card i {
+    font-size: 20px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.payment-card h5 {
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.payment-card:hover {
+    transform: translateY(-2px);
+}
+
+.payment-card.active {
+    border-color: #198754;
+    background: #f3fff7;
+}
+
+.payment-details {
+    margin-top: 15px;
+}
+
+/* Compact Payment Detail Box */
+.detail-section {
+    display: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px 15px; /* Reduced box padding from 25px */
+    background: #fff;
+}
+
+.detail-section h3 {
+    font-size: 14px; /* Reduced heading size */
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.detail-section p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.active-detail {
+    display: block;
+}
+
+/* Compact Account Info Bars */
+.info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px; /* Reduced row height from 15px */
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin: 6px 0;
+    font-size: 13px;
+}
+
+.info-box span,
+.info-box strong {
+    font-size: 12px;
+}
+
+/* Compact Copy Button */
+.info-box button {
+    border: none;
+    background: #198754;
+    color: white;
+    padding: 4px 10px; /* Smaller button padding */
+    font-size: 11px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#card input {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 13px;
+}
