@@ -1088,6 +1088,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			return;
 		}
 
+		const activeCard = document.querySelector('.payment-card.active h5');
+    	const selectedPaymentMethod = activeCard ? activeCard.innerText.trim() : 'JAZZCASH';
+
 		// 2. Build payload
 		const payload = {
 			firstName: document.getElementById('cust-first-name').value,
